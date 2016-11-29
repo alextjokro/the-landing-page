@@ -3,46 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Landing page</title>
+	<title>Alex Tjokro | My Landing Page</title>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="images/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- End Favicon -->
 
 	<link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-inverse">
 	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">Brand | It's me Alex!</a>
+	      <div class="navbar-brand">Alex Tjokro</div>
 	    </div>
-
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="main-nav">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#pitch">Pitch</a></li>
-	        <li><a href="#recent-project">Recent Work</a></li>
-	        <li><a href="#skills">Skills</a></li>
-	        <li><a href="#why">Why Eggbeater?</a></li>
-	        <li><a href="#">Let's Chat</a></li>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container -->
 	</nav>
 
 	<div class="content-area">
 		<header>
+			<div class="header-overlay"></div>
 			<div class="container">
-				<div class="row">
+				<div class="hero-content row">
 					<div class="col-xs-12">
-						<div class="hero-content">
 							<h1>Hello...<br>Is it me you're looking for?</h1>
-							<p class="lead">Oh yes Adele. It's me Alex. A front-end/UI developer with User Experience in mind based in Vancouver</p>
-						</div><!-- .hero-content -->
+							<p class="lead">Oh yes Eggbeater! It's me Alex.<br>A front-end/UI developer with<br>User Experience in mind based in Vancouver</p>
 					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->
@@ -52,7 +54,6 @@
 			<div class="container">
 				<div class="row pitch__title section-title">
 					<div class="col-xs-12">
-						<img src="#" alt="">
 						<p class="lead">I know you must be busy.</p>
 						<p>But before you hit that 'close tab' button, please read my</p>
 						<h2>My 30 second pitch</h2>
@@ -90,24 +91,25 @@
 				<div class="container">
 					<div class="row recent-project__header--title section-title">
 						<div class="col-xs-12">
-							<h2>Strut SF</h2>
-							<p>Programmatic operations at Strut are supported by the Campaign for Health & Wellness.</p>
+							<h2>BSTRO</h2>
+							<p>This project was an internal project during my time working at Vancouver's digital agency, BSTRO. The intentions of this project were to redesign and rebuild the agency site, to implement a much bolder and stronger branding identity throughout the site and make sure all the agency's strong points captured and delivered effectively.</p>
+							<img src="images/main-bstro.png" alt="BSTRO thumbnail">
 						</div><!-- .col-xs-12 -->
 					</div><!-- .row.recent-project__header--title.section-title -->
 				</div><!-- .container -->
 			</div><!-- .recent-project__header -->
 			<div class="recent-project__overview">
 				<div class="container">
-					<div class="row">
+					<div class="row single-column">
 						<div class="col-xs-12">
 							<h4>My Role</h4>
-							<p>Creating an unforgettable event is about more than the space, the food or the music – it’s about capturing what makes your vision unique and working with the best partners to bring it to life.</p>
+							<p>I paired with another front-end developer to handle the front-end aspects of the website and reported directly to BSTRO’s CTO. We built the WordPress theme from scratch, implemented the appropriate styles based on designer’s mockups and style guide, while also made sure all the interactive functionalities worked as expected.</p>
 						</div><!-- .col-xs-12 -->
 					</div><!-- .row -->
-					<div class="row">
+					<div class="row single-column">
 						<div class="col-xs-12">
 							<h4>Tools</h4>
-							<p>HTML5, CSS3, Sass &amp; Compass, Git</p>
+							<p>HTML5, PHP CSS3, Sass &amp; Compass, jQuery, MySQL, Bootstrap, Wordpress, Git</p>
 						</div><!-- .col-xs-12 -->
 					</div><!-- .row -->
 				</div><!-- .container -->
@@ -117,7 +119,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<img src="#" alt="">
+							<img src="images/r-bstro.png" alt="BSTRO site responsive screenshots">
 						</div><!-- .col-xs-12 -->
 					</div><!-- .row -->
 				</div><!-- .container -->
@@ -126,24 +128,26 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<h5>Other brands I've worked on</h5>
-							<div class="col-xs-12 col-sm-4 col-md-2">
-								<img src="#" alt="">
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-2">
-								<img src="#" alt="">
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-2">
-								<img src="#" alt="">
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-2">
-								<img src="#" alt="">
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-2">
-								<img src="#" alt="">
-							</div>
-							<div class="col-xs-12 col-sm-4 col-md-2">
-								<img src="#" alt="">
+							<h5>Other brands I've worked with</h5>
+							<div class="col-logo-container">
+								<div class="col-logo col-xs-12 col-sm-2">
+									<img src="images/logo-rogaine.png" alt="Rogaine logo">
+								</div><!-- .col-logo -->
+								<div class="col-logo col-xs-12 col-sm-2">
+									<img src="images/logo-neutrogena.png" alt="Neutrogena logo">
+								</div><!-- .col-logo -->
+								<div class="col-logo col-xs-12 col-sm-2">
+									<img src="images/logo-strut.png" alt="Strut SF logo">
+								</div><!-- .col-logo -->
+								<div class="col-logo col-xs-12 col-sm-2">
+									<img src="images/logo-qmunity.png" alt="Qmunity logo">
+								</div><!-- .col-logo -->
+								<div class="col-logo col-xs-12 col-sm-2">
+									<img src="images/logo-hnf.png" alt="HNF Canada logo">
+								</div><!-- .col-logo -->
+								<div class="col-logo col-xs-12 col-sm-2">
+									<img src="images/logo-pearl.png" alt="Pearl SF logo">
+								</div><!-- .col-logo -->
 							</div>
 						</div><!-- .col-xs-12 -->
 					</div><!-- .row -->
@@ -161,44 +165,43 @@
 					</div><!-- .col-xs-12 -->
 				</div><!-- .row.skills__title -->
 				<div class="row skills-content">
-					<div class="col-xs-12 col-sm-6">
-						<div>
+					<div class="column-2 col-xs-12 col-sm-6">
+						<div class="column-text-container">
 							<h4>Development</h4>
 							<p>I can work closely with designers and back-end engineers, either as a sole front-end or in Agile teams.</p>
-						</div>
-						<div>
+						</div><!-- .column-text-container -->
+						<div class="column-text-container">
 							<h4>Skills</h4>
 							<ul class="skills-list-1">
 								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
+								<li><p>CSS3</p></li>
+								<li><p>Sass/SCSS &amp; Compass</p></li>
+								<li><p>Javascript</p></li>
+								<li><p>jQuery</p></li>
 							</ul><!-- .skills-list-1 -->
 							<ul class="skills-list-2">
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
+								<li><p>Ruby on Rails</p></li>
+								<li><p>MySQL</p></li>
+								<li><p>Git</p></li>
+								<li><p>Wordpress Development</p></li>
+								<li><p>Quality Assurance</p></li>
 							</ul><!-- .skills-list-2 -->
-						</div>
+						</div><!-- .column-text-container -->
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<div>
+					<div class="column-2 col-xs-12 col-sm-6">
+						<div class="column-text-container">
 							<h4>UX Design</h4>
 							<p>Taking advantage of my development knowledge I can find the best way to make a reliable and consistent layout.</p>
-						</div>
-						<div>
+						</div><!-- .column-text-container -->
+						<div class="column-text-container">
 							<h4>Tools</h4>
 							<ul class="tools-list">
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
-								<li><p>HTML5</p></li>
+								<li><p>Adobe Photoshop</p></li>
+								<li><p>Adobe Illustrator</p></li>
+								<li><p>Sketch</p></li>
+								<li><p>Wireframing</p></li>
 							</ul><!-- .tools-list -->
-						</div>
+						</div><!-- .column-text-container -->
 					</div>
 				</div><!-- .row-skills-content -->
 			</div><!-- .container -->
@@ -206,7 +209,7 @@
 
 		<section id="why" class="why">
 			<div class="container">
-				<div class="row why__title">
+				<div class="row why__title section-title">
 					<div class="col-xs-12">
 						<p class="lead">OMG last chance.</p>
 						<p>I'm sure by this time you're not only looking just by the skills but something more in a person himself.</p>
@@ -214,21 +217,41 @@
 					</div>
 				</div><!-- .row.why__title -->
 				<div class="row why__content">
-					<div class="col-xs-12 col-sm-6">
-						<h4>Never Stop</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur mollitia sapiente repudiandae ipsam, explicabo consequatur quod architecto nesciunt soluta at temporibus, aperiam unde? Facilis perspiciatis quaerat placeat dolorem omnis sunt.</p>
+					<div class="col-xs-12 col-sm-4">
+						<h4>Challenging projects</h4>
+						<p>I appreciate the possibility to work with various clients and projects that will ensure me to be always creative and innovative in writing my baby codes.</p>
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<h4>Never Stop</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur mollitia sapiente repudiandae ipsam, explicabo consequatur quod architecto nesciunt soluta at temporibus, aperiam unde? Facilis perspiciatis quaerat placeat dolorem omnis sunt.</p>
+					<div class="col-xs-12 col-sm-4">
+						<h4>Fun and supportive environment</h4>
+						<p>I'm looking to invest my time and energy in to a company that appreciates my values as their employee and helps me to always improve and learn new cool stuffs in the hood.</p>
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<h4>Never Stop</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur mollitia sapiente repudiandae ipsam, explicabo consequatur quod architecto nesciunt soluta at temporibus, aperiam unde? Facilis perspiciatis quaerat placeat dolorem omnis sunt.</p>
+					<div class="col-xs-12 col-sm-4">
+						<h4>Location, location, location!</h4>
+						<p>Who can resist the opportunity to work in the beautiful Granville island? :)</p>
 					</div>
 				</div><!-- .row.why__content -->
 			</div><!-- .container -->
 		</section><!-- #why.why -->
+
+		<section class="outro">
+			<div class="container">
+				<div class="row outro__title section-title">
+					<div class="col-xs-12">
+						<p class="lead">So, meet your future team-mate</p>
+					</div>
+				</div>
+				<div class="row outro__content">
+					<div class="col-xs-12">
+						<img src="images/profile-pic.jpg" alt="Alex Tjokro">
+						<h4>Alex Tjokro</h4>
+						<p>Future Eggbeater developer</p>
+						<a href="mailto:alex@tjok.ro" class="btn-primary">Contact me</a>
+						<a href="http://tjok.ro" target="_blank" class="btn-primary">Portfolio site</a>
+						<a href="https://ca.linkedin.com/in/alextjokro" target="_blank" class="btn-primary">Linkedin resume</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div><!-- .content-area -->
 
 	<footer>
@@ -244,6 +267,7 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="javascripts/bootstrap.min.js"></script>
+	<script src="javascripts/jquery.matchHeight.js"></script>
 	<script src="javascripts/main.js"></script>
 </body>
 </html>

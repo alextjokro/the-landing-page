@@ -1,1 +1,19 @@
 /* NAVIGATION STYLES */
+
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	@include border-radius(0);
+
+	.navbar-brand {
+		font-family: $base-font;
+		font-size: 22px;
+		font-weight: $bold;
+		color: $gold;
+		cursor: text;
+
+		&:hover {
+			color: $gold;
+		}
+	}
+}

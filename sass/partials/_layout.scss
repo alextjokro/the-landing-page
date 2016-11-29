@@ -8,4 +8,330 @@ body {
 	max-width: 1140px;
 	width: 100%;
 	margin: 0 auto;
+	height: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+section {
+	padding: 60px 0;
+
+	@media(max-width: $screen-md) {
+		padding: 40px 0;
+	}
+
+	@media(max-width: $screen-mobile-max) {
+		padding: 30px 0;
+	}
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 40px;
+	padding: 0 80px;
+
+	@media(max-width: $screen-md) {
+		padding: 0 40px;
+		margin-bottom: 30px;
+	}
+
+	@media(max-width: $screen-mobile-max) {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+	}
+}
+
+.single-column {
+	padding: 0 80px;
+
+	@media(max-width: $screen-md) {
+		padding: 0 40px;
+	}
+
+	@media(max-width: $screen-mobile-max) {
+		padding: 0;
+	}
+}
+
+/* HEADER */
+header {
+	background-image: url('../images/hero-bg.jpg');
+	@include backgroundCover();
+	position: relative;
+
+	.header-overlay {
+		@include overlay(black);
+	}
+
+	.container {
+		position: relative;
+
+		.hero-content {
+			text-align: center;
+			margin: 0;
+
+			@include centered();
+
+			h1, p {
+				color: white;
+			}
+
+			p.lead {
+				font-size: 20px;
+				font-weight: $light;
+				text-transform: none;
+				line-height: 1.6;
+
+				@media(max-width: $screen-md) {
+					font-size: 20px;
+				}
+
+				@media(max-width: $screen-mobile-max) {
+					font-size: 18px;
+				}
+
+				@media(max-width: $screen-mobile) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+/* PITCH */
+.pitch {
+
+	&__title {
+		padding-bottom: 40px;
+		border-bottom: solid 5px $gold;
+
+		@media(max-width: $screen-md) {
+			padding-bottom: 30px
+		}
+
+		@media(max-width: $screen-mobile-max) {
+			padding-bottom: 20px
+		}
+	}
+
+	&__content {
+		@media(max-width: $screen-mobile-max) {
+			text-align: center;
+		}
+	}
+}
+
+/* RECENT PROJECT */
+.recent-project {
+	padding-bottom: 0;
+
+	&__header {
+		position: relative;
+		padding-top: 60px;
+
+		&--bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			background-color: $teal;
+		}
+
+		h2,
+		p {
+			color: white;
+		}
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		img {
+			margin: 30px 0 0;
+		}
+	}
+
+	&__overview {
+		text-align: center;
+		padding-bottom: 60px;
+	}
+
+	&__details {
+		text-align: center;
+		position: relative;
+
+		&--bg {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			background-color: $teal;
+		}
+
+		img {
+			max-width: 960px;
+			width: 100%;
+		}
+	}
+
+	&__others {
+		background-color: shade($teal, 20%);
+		text-align: center;
+		padding: 30px 0;
+
+		.col-logo-container {
+			display: table;
+			width: 100%;
+			margin-top: 30px;
+
+			@media(max-width: $screen-mobile-max) {
+				display: block;
+			}
+		}
+
+		.col-logo {
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+
+			@media(max-width: $screen-mobile-max) {
+				display: block;
+				vertical-align: none;
+				float: left;
+				width: 33.33333%;
+				margin-bottom: 30px;
+			}
+
+			@media(max-width: $screen-xs) {
+				width: 100%;
+			}
+
+			img {
+				max-width: 100px;
+				width: 100%;
+				margin-bottom: 0;
+
+				@media(max-width: $screen-md) {
+					max-width: 75px;
+				}
+
+				@media(max-width: $screen-mobile-max) {
+					max-width: 100px;
+				}
+			}
+		}
+
+		h5 {
+			color: white;
+		}
+	}
+}
+
+/* SKILLS */
+.skills {
+	background-color: $darker-black;
+	text-align: center;
+	
+	h2, h3, h4, h5 {
+		color: $gold;
+	}
+
+	li, p {
+		color: white;
+	}
+
+	.column-2 {
+
+		@media(max-width: $screen-mobile-max) {
+			margin-bottom: 0;
+		}
+
+		&:first-child {
+			border-right: solid 2px $gold;
+
+			@media(max-width: $screen-mobile-max) {
+				border-right: none;
+			}
+
+			ul {
+				margin-bottom: 0;
+
+				li:last-child {
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		.column-text-container {
+			padding: 0 15px;
+			margin-bottom: 30px;
+
+			@media(max-width: $screen-mobile-max) {
+				padding: 0;
+			}
+
+			p:last-child {
+				margin-bottom: 0;
+			}
+
+			ul {
+				width: 200px;
+			}
+		}
+	}
+}
+
+/* WHY */
+.why {
+	&__title {
+		padding-bottom: 40px;
+		border-bottom: solid 5px $gold;
+
+		@media(max-width: $screen-md) {
+			padding-bottom: 30px
+		}
+
+		@media(max-width: $screen-mobile-max) {
+			padding-bottom: 20px
+		}
+	}
+
+	&__content {
+		@media(max-width: $screen-mobile-max) {
+			text-align: center;
+		} 
+	}
+}
+
+/* OUTRO */
+.outro {
+	background-image: url('../images/geometry.png');
+
+	&__content {
+		text-align: center;
+		
+		img {
+			max-width: 180px;
+			@include border-radius(50%);
+		}
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		p {
+			margin-bottom: 30px;
+		}
+	}
+
 }
