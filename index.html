@@ -24,10 +24,10 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="main-nav">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Pitch</a></li>
-	        <li><a href="#">Recent Work</a></li>
-	        <li><a href="#">Skills</a></li>
-	        <li><a href="#">Why Eggbeater?</a></li>
+	        <li class="active"><a href="#pitch">Pitch</a></li>
+	        <li><a href="#recent-project">Recent Work</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#why">Why Eggbeater?</a></li>
 	        <li><a href="#">Let's Chat</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
@@ -48,7 +48,7 @@
 			</div><!-- .container -->
 		</header>
 
-		<section class="pitch">
+		<section id="pitch" class="pitch">
 			<div class="container">
 				<div class="row pitch__title section-title">
 					<div class="col-xs-12">
@@ -73,9 +73,9 @@
 					</div>
 				</div><!-- .row.pitch__content -->
 			</div><!-- .container -->
-		</section><!-- .pitch -->
+		</section><!-- #pitch.pitch -->
 
-		<section class="recent-project">
+		<section id="recent-project" class="recent-project">
 			<div class="recent-project__title">
 				<div class="container">
 					<div class="row section-title">
@@ -149,9 +149,9 @@
 					</div><!-- .row -->
 				</div><!-- .container -->
 			</div><!-- .recent-project__others -->
-		</section><!-- .recent-project -->
+		</section><!-- #recent-project.recent-project -->
 
-		<section class="skills">
+		<section id="skills" class="skills">
 			<div class="container">
 				<div class="row skills__title section-title">
 					<div class="col-xs-12">
@@ -202,9 +202,9 @@
 					</div>
 				</div><!-- .row-skills-content -->
 			</div><!-- .container -->
-		</section><!-- .skills -->
+		</section><!-- #skills.skills -->
 
-		<section class="why">
+		<section id="why" class="why">
 			<div class="container">
 				<div class="row why__title">
 					<div class="col-xs-12">
@@ -228,7 +228,7 @@
 					</div>
 				</div><!-- .row.why__content -->
 			</div><!-- .container -->
-		</section><!-- .why -->
+		</section><!-- #why.why -->
 	</div><!-- .content-area -->
 
 	<footer>
@@ -242,10 +242,8 @@
 		</div>
 	</footer>
 	
-	<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="javascripts/bootstrap.min.js"></script>
+	<script src="javascripts/main.js"></script>
 </body>
 </html>
